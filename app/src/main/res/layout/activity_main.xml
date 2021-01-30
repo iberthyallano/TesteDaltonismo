@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/resposta01TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Resposta_1"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toEndOf="@+id/teste01Button"
+            app:layout_constraintTop_toBottomOf="@+id/subtitulo2TextView" />
+
+        <TextView
+            android:id="@+id/subtitulo2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="Suas respostas:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toEndOf="@+id/teste01Button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.458" />
+
+        <TextView
+            android:id="@+id/resposta02TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="Resposta_2"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toEndOf="@+id/teste02Button"
+            app:layout_constraintTop_toBottomOf="@+id/resposta01TextView" />
+
+        <TextView
+            android:id="@+id/resposta03TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:text="Resposta_3"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toEndOf="@+id/teste03Button"
+            app:layout_constraintTop_toBottomOf="@+id/resposta02TextView" />
+
+        <Button
+            android:id="@+id/teste01Button"
+            android:layout_width="172dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="2dp"
+            android:text="teste 01"
+            app:layout_constraintBottom_toTopOf="@+id/teste02Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.951" />
+
+        <Button
+            android:id="@+id/verificaButton"
+            android:layout_width="172dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="40dp"
+            android:background="#FFFFFF"
+            android:text="Verificar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.877" />
+
+        <Button
+            android:id="@+id/teste02Button"
+            android:layout_width="172dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="3dp"
+            android:text="teste 02"
+            app:layout_constraintBottom_toTopOf="@+id/teste03Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.957" />
+
+        <Button
+            android:id="@+id/teste03Button"
+            android:layout_width="172dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="472dp"
+            android:layout_marginBottom="9dp"
+            android:text="teste 03"
+            app:layout_constraintBottom_toTopOf="@+id/verificaButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.492" />
+
+        <TextView
+            android:id="@+id/descricaoTextView"
+            android:layout_width="339dp"
+            android:layout_height="127dp"
+            android:text="Daltonismo é uma perturbação da percepção visual caracterizada pela incapacidade de diferenciar todas ou algumas cores, manifestando-se muitas vezes pela dificuldade em distinguir o verde do vermelho."
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/subtituloTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tituloTextView" />
+
+        <TextView
+            android:id="@+id/tituloTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="O que é?"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/subtituloTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.136"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.026" />
+
+        <TextView
+            android:id="@+id/subtituloTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="56dp"
+            android:text="Faça o teste!"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/teste01Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.163"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/resultadoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado_do_teste"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toEndOf="@+id/verificaButton"
+            app:layout_constraintTop_toBottomOf="@+id/resposta03TextView"
+            app:layout_constraintVertical_bias="0.415" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

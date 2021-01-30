@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TesteActivity">
+
+        <TextView
+            android:id="@+id/tituloTextView"
+            android:layout_width="378dp"
+            android:layout_height="86dp"
+            android:text="Que número você vê na imagem abaixo?"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <EditText
+            android:id="@+id/entradaEditTextNumber"
+            android:layout_width="378dp"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.785" />
+
+        <Button
+            android:id="@+id/cacelarButton"
+            android:layout_width="162dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="36dp"
+            android:text="cancelar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/entradaEditTextNumber"
+            app:layout_constraintVertical_bias="0.058" />
+
+        <Button
+            android:id="@+id/confirmarButton"
+            android:layout_width="162dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="36dp"
+            android:text="confirmar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/entradaEditTextNumber"
+            app:layout_constraintVertical_bias="0.058" />
+
+        <ImageView
+            android:id="@+id/testeImageView"
+            android:layout_width="378dp"
+            android:layout_height="332dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tituloTextView"
+            app:srcCompat="@drawable/teste01" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
